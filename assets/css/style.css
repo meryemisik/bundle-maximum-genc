@@ -50,6 +50,7 @@ main .hero {
   padding: 10px;
   margin-bottom: 20px;
   background-color: #133c87;
+  cursor: pointer;
 }
 
 .content-box .text-content {

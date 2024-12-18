@@ -44,7 +44,7 @@
       <div class="content">
 
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602848750;dc_trk_cid=225753668;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-1.png" class="w-100 h-100  object-fit-cover">
@@ -61,7 +61,7 @@
           </div>
         </div>
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602866653;dc_trk_cid=226259373;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-2.png" class="w-100 h-100  object-fit-cover">
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602731940;dc_trk_cid=226259343;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-3.png" class="w-100 h-100  object-fit-cover">
@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602866491;dc_trk_cid=225714901;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-4.png" class="w-100 h-100  object-fit-cover">
@@ -109,7 +109,7 @@
           </div>
         </div>
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602866488;dc_trk_cid=225714916;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-5.png" class="w-100 h-100  object-fit-cover">
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-        <div class="content-box d-flex">
+        <div class="content-box d-flex" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602863806;dc_trk_cid=227802834;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">
           <div class="col p-0">
             <div class="position-relative h-100">
               <img src="./assets/img/content-img-6.png" class="w-100 h-100  object-fit-cover">
@@ -154,7 +154,7 @@
             <span class="wide-content-box-title fw-bold mb-1"><i>MAXIMUM GENÇ</i></span>
             <span class="wide-content-box-title fw-bold mb-1"><i>AYRICALIKLARINDAN</i></span>
             <span class="wide-content-box-desc fw-bold mb-4"><i>YARARLANMAK İÇİN</i></span>
-            <button class="btn wide-content-box-btn mb-5">HEMEN BAŞVUR</button>
+            <button class="btn wide-content-box-btn mb-5" data-link="https://ad.doubleclick.net/ddm/trackclk/N360802.3333133BUNDLE/B32904819.410512615;dc_trk_aid=602863803;dc_trk_cid=226259790;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1">HEMEN BAŞVUR</button>
           </div>
         </div>
 
@@ -163,6 +163,30 @@
     </main>
 
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contentBoxes = document.querySelectorAll('.content-box');
+        contentBoxes.forEach(function(contentBox) {
+        contentBox.addEventListener('click', function() {
+        const link = contentBox.getAttribute('data-link');
+        if (link) {
+          window.open(link, '_blank');
+        }
+        });
+      });
+    });
+
+    const applyButton = document.querySelector('.wide-content-box-btn');
+      if (applyButton) {
+        applyButton.addEventListener('click', function() {
+          const link = applyButton.getAttribute('data-link');
+          if (link) {
+            window.open(link, '_blank');
+          }
+        });
+      }
+  </script>
 
 </body>
 
