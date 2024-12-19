@@ -53,6 +53,10 @@ main .hero {
   cursor: pointer;
 }
 
+.content-box {
+  gap: 10px;
+}
+
 .content-box .text-content {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ main .hero {
 
 .content-box-desc {
   color: #fff;
-  font-size: 11px;
+  font-size: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -104,6 +108,12 @@ main .hero {
   border-radius: 6px;
   padding: 4px 20px;
   font-weight: bold;
+}
+
+.content-box-btn:hover {
+  background-color: #fff;
+  color: #133c87;
+  opacity: 0.8;
 }
 
 .content-box .watermark {
@@ -151,6 +161,12 @@ main .hero {
   font-weight: bold;
 }
 
+.wide-content-box-btn:hover {
+  background-color: #fff;
+  color: #133c87;
+  opacity: 0.8;
+}
+
 .wide-content-kart {
   width: 40%;
   margin-top: -30%;
@@ -174,4 +190,9 @@ main .hero {
   .content-box-x {
     margin-bottom: 0;
   }
+}
+
+
+.fw-demi{
+  font-weight: 600 !important;
 }
